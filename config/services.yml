@@ -1,0 +1,7 @@
+services:
+    jmz.avatarresize.listener:
+        class: jmz\avatarresize\event\listener
+        arguments:
+            - @config
+        tags:
+            - { name: event.listener }

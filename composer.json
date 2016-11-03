@@ -1,0 +1,27 @@
+{
+    "name": "jmz/avatarresize",
+    "type": "phpbb-extension",
+    "description": "Automatically resizes avatars when uploaded.",
+    "homepage": "https://www.jmzsoftware.com",
+    "version": "1.0.0-dev",
+    "time": "2016-11-2",
+    "license": "GPL-2.0",
+    "authors": [
+	{
+	   "name": "James Taylor",
+	   "username": "jmz",
+	   "homepage": "https://www.jmzsoftware.com/",
+	   "role": "Developer"
+	}
+    ],
+    "require": {
+        "php": ">=5.3.3",
+		"phpbb/phpbb": ">=3.1.4 <3.2.0@dev"
+    },
+    "extra": {
+        "display-name": "Avatar Resize Extension",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.4,<3.2.0@dev"
+        }
+    }
+}
