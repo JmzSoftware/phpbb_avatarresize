@@ -20,7 +20,7 @@ class listener implements EventSubscriberInterface
 	{
 		return array(
 			'core.user_setup' => 'load_language_on_setup',
-			'core.avatar_upload' => 'avatar_upload'
+			'core.avatar_upload' => 'avatar_upload',
 		);
 	}
 
@@ -36,7 +36,7 @@ class listener implements EventSubscriberInterface
 		$lang_set_ext          = $event['lang_set_ext'];
 		$lang_set_ext[]        = array(
 			'ext_name' => 'jmz/avatarresize',
-			'lang_set' => 'common'
+			'lang_set' => 'common',
 		);
 		$event['lang_set_ext'] = $lang_set_ext;
 	}
@@ -45,7 +45,6 @@ class listener implements EventSubscriberInterface
 	{
 		if ($this->config['avatarresize_enable'] == 1)
 		{
-error_log("entering");
 			$file = $event['filename'];
 			$w = $event['max_width'];
 			$h = $event['max_height'];
